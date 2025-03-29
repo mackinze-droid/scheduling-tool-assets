@@ -1,18 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <title>Estimate Calculator & Scheduling Tool</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-
 <body>
   <div class="container">
     <h1>Get Your Free Estimate & Book Services</h1>
 
-    <!-- Estimate Calculator Form (Existing) -->
+    <!-- Estimate Scheduling Form (Existing) -->
     <div class="section">
       <h2>Get a Free Estimate</h2>
       <form id="estimateForm">
@@ -233,83 +226,14 @@
         </div>
       </form>
     </div>
-    <!-- End Estimate Calculator Form -->
-
-    <!-- *** NEW: Admin Booking Form *** -->
-    <div class="section" id="adminBookingSection">
-      <h2>Admin - Create New Appointment</h2>
-      <form id="adminBookingForm">
-        <div class="section">
-          <h3>Appointment Details</h3>
-          <label for="adminDate">Date:</label>
-          <input type="date" id="adminDate" name="adminDate" required><br>
-
-          <label for="adminTime">Time Slot:</label>
-          <input type="text" id="adminTime" name="adminTime" placeholder="e.g., 9:00 AM - 10:00 AM" required><br>
-
-          <label for="adminServiceType">Service Type:</label>
-          <select id="adminServiceType" name="adminServiceType" required>
-            <option value="">-- Select Service --</option>
-            <option value="Pressure Washing">Pressure Washing</option>
-            <option value="Window Cleaning">Window Cleaning</option>
-            <option value="Gutter Cleaning">Gutter Cleaning</option>
-            <option value="On-Site Estimate - Pressure Washing">On-Site Estimate - Pressure Washing</option>
-            <option value="On-Site Estimate - Window Cleaning">On-Site Estimate - Window Cleaning</option>
-            <option value="On-Site Estimate - Gutter Cleaning">On-Site Estimate - Gutter Cleaning</option>
-          </select><br>
-
-          <label for="adminStatus">Status:</label>
-          <select id="adminStatus" name="adminStatus" required>
-            <option value="">-- Select Status --</option>
-            <option value="Pending">Pending</option>
-            <option value="Confirmed">Confirmed</option>
-            <option value="Completed">Completed</option>
-            <option value="Cancelled">Cancelled</option>
-          </select><br>
-
-          <label for="adminAssignedTo">Assigned To (Team):</label>
-          <input type="text" id="adminAssignedTo" name="adminAssignedTo" placeholder="e.g., Team 1, Sarah Jones"><br>
-        </div>
-
-        <div class="section">
-          <h3>Customer Information</h3>
-          <label for="adminCustomerName">Customer Name:</label>
-          <input type="text" id="adminCustomerName" name="adminCustomerName" required><br>
-
-          <label for="adminCustomerPhone">Customer Phone:</label>
-          <input type="tel" id="adminCustomerPhone" name="adminCustomerPhone" required><br>
-
-          <label for="adminCustomerEmail">Customer Email:</label>
-          <input type="email" id="adminCustomerEmail" name="adminCustomerEmail"><br>
-
-          <label for="adminServiceAddress">Service Address:</label>
-          <input type="text" id="adminServiceAddress" name="adminServiceAddress" required><br>
-        </div>
-
-        <div class="section">
-          <h3>Additional Notes</h3>
-          <label for="adminNotes">Notes/Details:</label><br>
-          <textarea id="adminNotes" name="adminNotes" rows="4"></textarea><br>
-        </div>
-
-        <input type="hidden" id="adminBookingSource" name="adminBookingSource" value="Admin Booking">
-        <button type="submit">Create Appointment</button>
-      </form>
-      <div id="adminBookingResult" style="display: none;">
-        <p id="adminBookingMessage"></p>
-      </div>
-      <div id="adminBookingError" class="error" style="display: none;">
-        <p></p>
-      </div>
-    </div>
-    <!-- End Admin Booking Form -->
+    <!-- End Estimate Scheduling Form -->
 
     <div id="errorMessages" class="error" style="display: none;">
       <p></p>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="https://mackinze-droid.github.io/scheduling-tool-assets/script.js"></script>
 </body>
 
 </html>
